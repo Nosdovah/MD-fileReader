@@ -26,17 +26,20 @@ A premium, feature-rich Markdown reader and editor built with React and Vite. It
 
 ## 📦 Installation & Setup
 
-1. **Clone or navigate to the repository**:
+1. **Clone the repository**:
+
    ```bash
-   cd "c:\Users\raiha\Documents\Kuliah\Universitas Pakuan\Personal Project\md-fileReader"
+   "git clone https://github.com/Nosdovah/MD-fileReader.git"
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**:
+
    ```bash
    npm run dev
    ```
@@ -54,6 +57,8 @@ A premium, feature-rich Markdown reader and editor built with React and Vite. It
 ## 🛠️ Troubleshooting & Technical Details
 
 ### Dark Theme vs. Export Theme
+
 To prevent dark-theme background colors (like dark grey headers/table cells) from bleeding into printed formats:
+
 - **PDF Export**: A temporary `.export-mode` CSS class is appended to a cloned DOM element. This class forces light-colored CSS variables (`--bg-primary: #ffffff !important`, `--border: #e2e8f0 !important`, etc.) and disables horizontal scrolling (`white-space: pre-wrap !important`), ensuring the PDF wraps text nicely.
 - **DOCX Export**: The file is generated as a structured HTML stream wrapped with Microsoft Word XML definitions. It contains an embedded stylesheet defining light table borders and alternating row colors, preventing Word from adopting dark mode formatting.
