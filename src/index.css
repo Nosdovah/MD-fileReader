@@ -272,3 +272,26 @@ body {
   word-break: break-word !important;
 }
 
+/* Prevent page breaks from slicing through lines inside the code block */
+.export-mode .syntax-highlighter > span {
+  display: block !important;
+  page-break-inside: avoid !important;
+  break-inside: avoid !important;
+}
+
+/* Prevent page breaks from slicing through table rows, paragraphs, blockquotes, and lists */
+.export-mode tr,
+.export-mode blockquote,
+.export-mode p,
+.export-mode li,
+.export-mode h1,
+.export-mode h2,
+.export-mode h3,
+.export-mode h4,
+.export-mode h5,
+.export-mode h6 {
+  page-break-inside: avoid !important;
+  break-inside: avoid !important;
+}
+
+

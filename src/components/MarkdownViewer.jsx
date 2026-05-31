@@ -20,6 +20,7 @@ const MarkdownViewer = ({ content }) => {
                 language={match[1]}
                 PreTag="div"
                 wrapLongLines={true}
+                wrapLines={true}
                 className="syntax-highlighter"
               />
             ) : (
