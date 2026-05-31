@@ -29,7 +29,7 @@ A premium, feature-rich Markdown reader and editor built with React and Vite. It
 1. **Clone the repository**:
 
    ```bash
-   "git clone https://github.com/Nosdovah/MD-fileReader.git"
+   git clone https://github.com/Nosdovah/MD-fileReader.git
    ```
 
 2. **Install dependencies**:
